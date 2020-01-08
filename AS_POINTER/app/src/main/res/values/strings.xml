@@ -1,0 +1,38 @@
+<resources>
+    <string name="app_name">AS_POINTER</string>
+    <string name="navigation_drawer_open">Open navigation drawer</string>
+    <string name="navigation_drawer_close">Close navigation drawer</string>
+    <string name="nav_header_title">AS-Pointer</string>
+    <string name="nav_header_subtitle">Accident Prone Spot Locator </string>
+    <string name="nav_header_desc">Navigation header</string>
+
+    <string name="menu_home">Map</string>
+    <string name="menu_accidentinfo">Accident Spots</string>
+    <string name="menu_about">About Us</string>
+    <string name="menu_logout">Logout</string>
+    <string name="menu_contact">Contact Us</string>
+    <string name="menu_help">Help</string>
+
+    <string name="description">Accident Spot Prone Locator application integrated with google map
+        that helps in identifying accident prone area called as Blackspot.Whenever you plan to travel,
+        start the navigation on google map and open the app or if you know the route just open AS-Pointer app.
+        It will keep running while you drive towards your destination.As soon as you are within 300 meters range
+        of any spot that is accident prone area this application will give a voice message to you also if your speed
+        is greater than safe speed of that spot. This application will give a voice message to you, so that you are extra
+        watchful about accident prone area.
+    </string>
+    <string name="description2">
+    If AS-Pointer app is not working or some error in running then check in
+    Settings->Application->Application Manager->Accident Alert->Permissions->allow all permission..then check again..</string>
+
+    <string name="help_text">Accident prone Spot Locator application integrated with Google map that helps in identifying accident prone
+        spots and provide voice alert.Whenever you plan to travel,start the navigation on Google map and open the app,
+        it will keep running while you drive towards the destination.
+        As soon as you are within 1km range of any spot that is Accident prone area this application will give a voice alert.</string>
+
+
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="title_activity_maps">Map</string>
+    <string name="GoogleKey">AIzaSyDPhDKdAeXEWMBEun4GHmQbgsbS2bCDgCs </string>
+</resources>

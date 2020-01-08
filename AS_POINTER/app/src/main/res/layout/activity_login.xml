@@ -1,0 +1,99 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="fill_parent"
+    android:layout_height="match_parent"
+    tools:context=".LoginActivity"
+    android:id="@+id/login"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical">
+
+    <ScrollView
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:fitsSystemWindows="true"
+        >
+
+        <LinearLayout
+            android:orientation="vertical"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="40dp"
+            android:paddingLeft="24dp"
+           android:layout_marginTop="40dp"
+            android:paddingRight="24dp">
+
+            <ImageView
+                android:layout_width="170dp"
+                android:layout_height="120dp"
+                android:layout_gravity="center_horizontal"
+                android:layout_marginBottom="24dp"
+                android:src="@drawable/icon" />
+
+            <android.support.v7.widget.CardView
+            android:layout_width="100dp"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:elevation="20dp"
+            app:cardCornerRadius="5dp">
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:text="LogIn"
+                android:gravity="center"
+                android:textSize="25dp"
+                android:fontFamily="sans-serif"
+                android:textColor="@color/colorPrimary"
+
+                />
+        </android.support.v7.widget.CardView>
+
+            <!-- Email Label -->
+
+            <EditText
+                android:id="@+id/LoginEmail"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="Email"
+                android:layout_marginTop="10dp"
+                android:layout_marginBottom="10dp"
+                android:inputType="textEmailAddress" />
+
+
+            <!-- Password Label -->
+
+
+            <EditText
+                android:id="@+id/LoginPassword"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="Password"
+                android:layout_marginTop="10dp"
+                android:layout_marginBottom="10dp"
+                android:inputType="textPassword" />
+
+
+            <Button
+                android:id="@+id/Login_submit"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="24dp"
+                android:layout_marginBottom="24dp"
+                android:padding="12dp"
+                android:background="@color/colorAccent"
+                android:text="Login" />
+
+            <TextView
+                android:id="@+id/Register_Link"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textSize="18sp"
+                android:layout_marginBottom="40dp"
+                android:layout_gravity="center"
+                android:textColor="@color/color_link"
+                android:text="New? Register yourself!!"
+                />
+
+        </LinearLayout>
+    </ScrollView>
+</LinearLayout>
