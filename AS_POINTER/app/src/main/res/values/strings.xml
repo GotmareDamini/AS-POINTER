@@ -13,6 +13,9 @@
     <string name="menu_contact">Contact Us</string>
     <string name="menu_help">Help</string>
 
+    <string name="dialog_message">Welcome to Alert Dialog</string>
+    <string name="dialog_title">Javatpoint Alert Dialog</string>
+
     <string name="description">Accident Spot Prone Locator application integrated with google map
         that helps in identifying accident prone area called as Blackspot. Whenever you plan to travel,
         start the navigation on google map and open the app or if you know the route just open AS-Pointer app.
