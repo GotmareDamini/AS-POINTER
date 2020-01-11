@@ -42,15 +42,36 @@
         </android.support.v7.widget.CardView>
         <!--  Name Label -->
 
-        <EditText android:id="@+id/Name"
+        <android.support.design.widget.TextInputLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            >
+        <EditText android:id="@+id/F_Name"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:inputType="textCapWords"
-            android:hint="Name"
+            android:hint="First Name"
             android:layout_marginTop="5dp"
             android:layout_marginBottom="10dp"/>
+        </android.support.design.widget.TextInputLayout>
+        <android.support.design.widget.TextInputLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            >
 
-        <EditText android:id="@+id/email"
+        <EditText android:id="@+id/L_name"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:inputType="textCapWords"
+            android:hint="Last Name"
+            android:layout_marginTop="10dp"
+            android:layout_marginBottom="10dp"/>
+        </android.support.design.widget.TextInputLayout>
+        <android.support.design.widget.TextInputLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            >
+        <EditText android:id="@+id/r_email"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:inputType="textEmailAddress"
@@ -58,48 +79,76 @@
             android:layout_marginTop="10dp"
             android:layout_marginBottom="10dp"/>
 
-
-
-        <EditText android:id="@+id/mobile"
+        </android.support.design.widget.TextInputLayout>
+        <android.support.design.widget.TextInputLayout
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:inputType="textPassword"
-            android:hint="Phone Number"
-            android:layout_marginTop="10dp"
-            android:layout_marginBottom="10dp"/>
+            >
 
         <EditText
-            android:id="@+id/address"
+            android:id="@+id/r_address"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:inputType="textPassword"
+            android:inputType="textCapWords"
             android:hint="Address"
             android:layout_marginTop="10dp"
             android:layout_marginBottom="10dp"
             />
+        </android.support.design.widget.TextInputLayout>
 
+        <android.support.design.widget.TextInputLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            >
+
+            <EditText
+                android:id="@+id/r_mobile"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:inputType="number"
+                android:hint="Mobile Number"
+                android:layout_marginTop="10dp"
+                android:layout_marginBottom="10dp"
+                />
+        </android.support.design.widget.TextInputLayout>
 
         <!-- Password Label -->
 
-        <EditText android:id="@+id/password"
+        <android.support.design.widget.TextInputLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            app:passwordToggleEnabled="true">
+        <EditText android:id="@+id/r_password"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:inputType="textPassword"
             android:hint="Password"
             android:layout_marginTop="10dp"
             android:layout_marginBottom="10dp"/>
+        </android.support.design.widget.TextInputLayout>
 
 
-
-        <EditText android:id="@+id/cpassword"
+        <android.support.design.widget.TextInputLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            app:passwordToggleEnabled="true">
+        <EditText android:id="@+id/r_cpassword"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:inputType="textPassword"
             android:hint="Confirm Password"
             android:layout_marginTop="10dp"
             android:layout_marginBottom="10dp"/>
+        </android.support.design.widget.TextInputLayout>
 
 
+        <ProgressBar
+            android:id="@+id/loading"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="30dp"
+            android:visibility="gone"
+            />
         <!-- Signup Button -->
         <Button
             android:id="@+id/register"

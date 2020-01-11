@@ -93,7 +93,7 @@ public class MainActivity extends AppCompatActivity   implements NavigationView.
             } else if (id == R.id.nav_help) {
                 getSupportFragmentManager().beginTransaction().replace(R.id.fragment_content, new Help()).addToBackStack(backstackname).commit();
             } else if (id == R.id.nav_logout) {
-                getSupportFragmentManager().beginTransaction().replace(R.id.fragment_content, new Logout()).addToBackStack(backstackname).commit();
+                startActivity(new Intent( MainActivity.this, LoginActivity.class ));
             } else if (id == R.id.nav_contact) {
                 getSupportFragmentManager().beginTransaction().replace(R.id.fragment_content, new ContactUs()).addToBackStack(backstackname).commit();
             }else if (id == R.id.nav_info) {
