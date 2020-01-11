@@ -57,27 +57,6 @@ public class MainActivity extends AppCompatActivity   implements NavigationView.
         }
     }
 
-//    @Override
-//    public boolean onCreateOptionsMenu(Menu menu) {
-//        // Inflate the menu; this adds items to the action bar if it is present.
-//        getMenuInflater().inflate(R.menu.home, menu);
-//        return true;
-//    }
-
-//    @Override
-//    public boolean onOptionsItemSelected(MenuItem item) {
-//        // Handle action bar item clicks here. The action bar will
-//        // automatically handle clicks on the Home/Up button, so long
-//        // as you specify a parent activity in AndroidManifest.xml.
-//        int id = item.getItemId();
-//
-//        //noinspection SimplifiableIfStatement
-//        if (id == R.id.action_settings) {
-//            return true;
-//        }
-//
-//        return super.onOptionsItemSelected(item);
-//    }
 
     @SuppressWarnings("StatementWithEmptyBody")
     @Override
@@ -93,7 +72,10 @@ public class MainActivity extends AppCompatActivity   implements NavigationView.
             } else if (id == R.id.nav_help) {
                 getSupportFragmentManager().beginTransaction().replace(R.id.fragment_content, new Help()).addToBackStack(backstackname).commit();
             } else if (id == R.id.nav_logout) {
-                startActivity(new Intent( MainActivity.this, LoginActivity.class ));
+                //startActivity(new Intent( MainActivity.this, LoginActivity.class ));
+                Intent intent  = new Intent(this , LoginActivity.class);
+                intent.setFlags(Intent.FLAG_ACTIVITY_CLEAR_TOP);
+                startActivity(intent);
             } else if (id == R.id.nav_contact) {
                 getSupportFragmentManager().beginTransaction().replace(R.id.fragment_content, new ContactUs()).addToBackStack(backstackname).commit();
             }else if (id == R.id.nav_info) {
