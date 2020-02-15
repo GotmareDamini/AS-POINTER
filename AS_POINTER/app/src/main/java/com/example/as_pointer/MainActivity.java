@@ -38,7 +38,8 @@ public class MainActivity extends AppCompatActivity   implements NavigationView.
         toggle.syncState();
 
         if (savedInstanceState == null) {
-            getSupportFragmentManager().beginTransaction().replace(R.id.fragment_content, new Home()).addToBackStack(backstackname).commit();
+            getSupportFragmentManager().beginTransaction().replace(R.id.fragment_content, new AccidentalSpots()).addToBackStack(backstackname).commit();
+
         }
     }
 
@@ -70,8 +71,12 @@ public class MainActivity extends AppCompatActivity   implements NavigationView.
         Boolean fragmentpooped = getSupportFragmentManager().popBackStackImmediate(backstackname, 0);
         if (!fragmentpooped) {
             if (id == R.id.nav_home) {
-               getSupportFragmentManager().beginTransaction().replace(R.id.fragment_content, new Home()).addToBackStack(backstackname).commit();
-            } else if (id == R.id.nav_spots) {
+                startActivity(new Intent( this, MapsActivity.class ));
+                // getSupportFragmentManager().beginTransaction().replace(R.id.fragment_content, new Home()).addToBackStack(backstackname).commit();
+            } else    if (id == R.id.nav_location) {
+                startActivity(new Intent( this, MapsLocationActivity.class ));
+                // getSupportFragmentManager().beginTransaction().replace(R.id.fragment_content, new Home()).addToBackStack(backstackname).commit();
+            } else  if (id == R.id.nav_spots) {
                 getSupportFragmentManager().beginTransaction().replace(R.id.fragment_content, new AccidentalSpots()).addToBackStack(backstackname).commit();
             } else if (id == R.id.nav_help) {
                 getSupportFragmentManager().beginTransaction().replace(R.id.fragment_content, new Help()).addToBackStack(backstackname).commit();

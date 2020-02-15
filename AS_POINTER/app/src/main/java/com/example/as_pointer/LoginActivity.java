@@ -57,16 +57,9 @@ public class LoginActivity extends AppCompatActivity {
         login.setOnClickListener( new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                LoginValidate(v);
-                //String mEmail = email.getText().toString().trim();
-                //String mPassword = password.getText().toString().trim();
-
-              //  if (!mEmail.isEmpty() || !mPassword.isEmpty()) {
-                //    Login(mEmail, mPassword);
-                //} else {
-                  //  email.setError( "Please Enter Email!" );
-                  //  password.setError( "Please Enter Password!" );
-                //}
+               // LoginValidate(v);
+                Intent i = new Intent( LoginActivity.this, MainActivity.class );
+                startActivity( i );
             }
         } );
     }
